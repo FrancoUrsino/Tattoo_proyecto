@@ -25,6 +25,17 @@
   z-index: -9;
   mix-blend-mode:darken;
 }
+
+.container{
+  width: 100%;
+  /* height: 100vh; */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  padding: 150px 0;
+}
 /* =============================================== */
 
 .hero{
@@ -46,7 +57,7 @@
   position: absolute;
   background-position: right;
   animation: zoomIn 10s ease-in-out infinite;
-  overflow: hidden;
+  overflow-x: hidden;
   background-attachment: fixed;
 }
 
@@ -70,6 +81,7 @@ nav{
   width: 90%;
   margin: 0 auto;
   overflow-x: hidden;
+  backdrop-filter: blur(6px);
 }
 
 .nav-logo{
@@ -80,15 +92,19 @@ nav{
 }
 
 .nav-list{
+  font-family: "Rye", serif;
+  text-transform: uppercase;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   list-style: none;
 }
 
 .nav-list-item{
-  padding: 10px 0;
-  margin: 0 10px;
+  padding: 5px 0;
+  margin: 0 auto;
 }
+
+/* ====================================================== */
 
 .logo{
   position: relative;
@@ -107,6 +123,7 @@ nav{
   justify-content: center;
   display: flex;
   justify-items: center;
+  cursor: pointer;
 }
 .list-socialIcon{
   margin: 0 10;
@@ -114,6 +131,7 @@ nav{
   width: 40px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 /* =========================================== */
@@ -127,16 +145,6 @@ nav{
   height: 100vh;
 }
 
-.container{
-  width: 100%;
-  /* height: 100vh; */
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  text-align: center;
-  padding: 200px 0;
-}
 .info-container::before{
   content: '';
   background: url(./img/koiBg.png);
@@ -186,7 +194,7 @@ nav{
 
 /* =============================================== */
 
-.title-section{
+.title--section{
   position: relative;
   top: 820px;
   background: linear-gradient(180deg, rgba(224, 180, 115, 0.286) 0%, rgba(224, 180, 115, 0.435) 100%), url(./img/tattooTitle.jpg);
@@ -197,17 +205,17 @@ nav{
   z-index: -20;
   width: 100%;
   height: 50vh;
-  font-size: 3rem;
   text-align: center;
   overflow-x: hidden;
 }
 
-.title-section-title{
+.title--section-title{
   font-family: "Rye", serif;
   color: rgb(224, 224, 224);;
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
-  padding: 50px 0;
+  padding: 80px 0;
   margin: 100px 0;
+  font-size: 3rem;
 }
 
 /* ====================================================== */
@@ -218,14 +226,21 @@ nav{
   top: 800px;
   width: 100%;
   z-index: -5;
-  height: 80vh;
-  overflow-x: hidden;
+  height: 98vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   justify-items: center;
+}
 
+.about-title{
+  font-family: "Rye", serif;
+  color: rgb(59, 59, 59);
+  font-size: 2rem;
+  transform: scaley(2);
+  text-shadow: 2px 2px 3px rgb(125, 125, 125);
+  text-transform: uppercase;
+  width: 90%;
+  margin: 0 auto 40px;
 }
 
 .about-img{
@@ -233,5 +248,12 @@ nav{
   margin: 10px auto;
 }
 
+.about-text{
+  width: 90%;
+  margin: 20px auto;
+  font-size: 1.4rem;
+  font-family: "Akshar", sans-serif;
+  text-transform: uppercase;
+}
 
 /* ====================================================== */
