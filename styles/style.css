@@ -105,6 +105,7 @@ nav{
 
 .footer-title{
   margin-top: 10px;
+  padding-left: 20px;
   font-size: 2rem;
   font-family: "Rye", serif;
   text-transform: uppercase;
@@ -129,6 +130,22 @@ nav{
   @media (min-width:780px){
     padding: 0;
     padding-inline: 5px;
+  }
+}
+
+.footer-2{
+  width: 100%;
+  padding-inline: 30px;
+  background-color: rgb(17, 17, 17);
+  color: rgb(96, 96, 96);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+
+  @media (min-width:780px){
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 30px 0;
   }
 }
 
@@ -629,14 +646,14 @@ nav{
   justify-content: center;
 }
 
-.cuidados h1{
+.cuidados-title{
   color: rgb(255, 255, 255);
   font-family: "Rye", serif;
   font-size: 2.4rem;
   text-transform: uppercase;
   
 }
-.cuidados p{
+.cuidados-text{
   margin-top: 30px;
   color: rgb(255, 255, 255);
   font-size: 1.6rem;
@@ -750,16 +767,16 @@ nav{
   display: inline;
   width: 100%;
   position: absolute;
-  bottom: -1250px;
+  bottom: -1290px;
   left: -1;
   transform: rotateX(180deg);
   mix-blend-mode: inherit;
 
   @media (min-width:780px) {
-    bottom: -1530px;
+    bottom: -1620px;
   }
   @media (min-width:1200px) {
-    bottom: -1530px;
+    bottom: -1620px;
   }
   @media (min-width:1380px) {
     bottom: -350px;
@@ -778,7 +795,29 @@ nav{
   display: inline;
   width: 100%;
   position: absolute;
-  bottom: -650px;
+  bottom: -1550px;
   left: -1;
   mix-blend-mode: inherit;
+
+  @media (min-width:800px) {
+    bottom: -1830px;
+  }
+  @media (min-width:1380px) {
+    bottom: -590px;
+  }
+}
+
+.cuidados-2{
+  background-color: rgb(17, 17, 17);
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cuidados-2 .cuidados-text{
+  width: 90%;
+  margin-inline: auto;
 }
