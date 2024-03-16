@@ -668,7 +668,7 @@ nav{
 
 .cuidados img{
   position: relative;
-  bottom: -90px;
+  bottom: -120px;
 }
 /* ========================================= */
 
@@ -776,16 +776,16 @@ nav{
   display: inline;
   width: 100%;
   position: absolute;
-  bottom: -1290px;
+  bottom: -1250px;
   left: -1;
   transform: rotateX(180deg);
   mix-blend-mode: inherit;
 
   @media (min-width:780px) {
-    bottom: -1620px;
+    bottom: -1520px;
   }
   @media (min-width:1200px) {
-    bottom: -1620px;
+    bottom: -1520px;
   }
   @media (min-width:1380px) {
     bottom: -350px;
@@ -804,7 +804,7 @@ nav{
   display: inline;
   width: 100%;
   position: absolute;
-  bottom: -1550px;
+  bottom: -1520px;
   left: -1;
   mix-blend-mode: inherit;
 
@@ -812,7 +812,7 @@ nav{
     bottom: -1830px;
   }
   @media (min-width:1380px) {
-    bottom: -590px;
+    bottom: -660px;
   }
 }
 
@@ -840,6 +840,17 @@ nav{
   width: 100%;
   min-height: 70vh;
   padding-bottom: 100px;
+}
+
+.works-title{
+  font-family: "Akshar", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(236, 198, 144);
+
+  @media (min-width:1200px) {
+    font-size: 3rem;
+  }
 }
 
 .filter-container{
@@ -882,24 +893,23 @@ nav{
   margin: 5px;
   cursor: pointer;
   transition: all 0.4s ease;
+  font-family: "Akshar", sans-serif;
 }
 .category-title:hover{
   opacity: 0.7;
 }
+
 .category-title li{
   padding: 0 10px;
 }
-.category-title span{
-  color: #222;
-}
 
-/** single post **/
-.posts-main-container{
+.posts-container{
   display: grid;
   width: 90%;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   grid-gap: 40px;
+  justify-items: center;
 }
 
 .post-img{
@@ -907,6 +917,7 @@ nav{
   width: 350px;
   height: 450px;
 }
+
 .post-img img{
   width: 350px;
   height: 450px;
@@ -921,41 +932,27 @@ nav{
   color: #fff;
   padding: 4px 10px;
   border-radius: 2px;
+  font-family: "Akshar", sans-serif;
 }
 .Frank .category-name{
   background: #00a7ea;
 }
+
 .Larasalem .category-name{
   background: #f03250;
 }
+
 .Kat .category-name{
   background: #f0544f;
 }
+
 .Landq .category-name{
   background: #2c2a4a;
 }
+
 .Lucia .category-name{
   background: #a1e44d;
 }
-
-
-
-
-
-/***************/
-/* @media(max-width: 1170px){
-  .posts-main-container{
-      grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media(max-width: 768px){
-  .posts-main-container{
-      grid-template-columns: 1fr;
-  }
-} */
-
-
-/***********/
 
 .active{
   background: #f0544f;
