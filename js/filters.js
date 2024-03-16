@@ -18,7 +18,7 @@ function filterPosts(item){
 
 function changeActivePosition(activeItem){
     for(let i = 0; i < categoryTitle.length; i++){
-        categoryTitle[i].classList.remove('active');
+        categoryTitle[i].classList.remove('active-works');
     }
-    activeItem.classList.add('active');
+    activeItem.classList.add('active-works');
 }
