@@ -894,6 +894,11 @@ nav{
   cursor: pointer;
   transition: all 0.4s ease;
   font-family: "Akshar", sans-serif;
+
+  @media (min-width:1200px) {
+    font-size: 2rem;
+    padding: 5px;
+  }
 }
 .category-title:hover{
   opacity: 0.7;
