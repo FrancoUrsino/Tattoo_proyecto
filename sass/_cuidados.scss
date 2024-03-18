@@ -1,0 +1,268 @@
+.cuidados{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.788) 0%, rgba(139, 139, 139, 0.639) 50%, rgba(0, 0, 0, 0.78) 100%), url(../assets/bgLogo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cuidados-title{
+  color: rgb(255, 255, 255);
+  font-family: "Rye", serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.cuidados-text{
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: "Akshar", sans-serif;
+}
+
+.cuidados img{
+  position: relative;
+  bottom: -121px;
+}
+
+.consejos{
+  background-color: rgb(17, 17, 17);
+
+  @media (min-width:1360px) {
+    height: 70vh;
+  }
+}
+.consejos-grid{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(600px, auto));
+  z-index: 10;
+
+  @media (min-width: 1280px){
+    justify-content: space-between;
+    
+  }
+}
+
+.consejos-card{
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  width: 100%;
+  margin-inline: auto;
+  z-index: 10;
+
+  @media (min-width: 788px){
+    height: 800px;
+  }
+}
+.cons-1{
+  background-image: url(../assets/tattoos.jpg);
+}
+.cons-2{
+  background-image: url(../assets/piercings.jpg);
+}
+
+.consejos-card-img{
+  margin: auto;
+  width: 100%;
+  height: 650px;
+  background-color: rgba(83, 83, 83, 0.233);
+  visibility: hidden;
+  transition: all 200ms ease-in-out;
+  position: relative;
+  display: flex;
+
+  @media (min-width: 788px){
+    height: 800px;
+  }
+}
+
+.consejos-card-info{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -230px;
+  color: wheat;
+  visibility: hidden;
+}
+
+.consejos-card-info h4{
+  font-size: 30px;
+  font-family: "Rye", serif;
+  text-transform: uppercase;
+}
+
+.consejos-card:hover > .consejos-card-img{
+  visibility: visible;
+  animation: fade-in 400ms ease-in-out;
+}
+.consejos-card:hover > .consejos-card-info{
+  visibility: visible;
+  animation: fade-left 500ms ease-in-out;
+}
+
+@keyframes fade-left{
+  0%{
+    transform: scale(4);
+    left: 200%;
+  }
+  100%{
+    transform: scale(1);
+    left: 0;
+  }
+}
+@keyframes fade-in{
+  0%{
+    transform: scale(0.1);
+    top: 200%;
+  }
+  100%{
+    transform: scale(1);
+    top: 0;
+  }
+}
+
+.consejos-border-bottom{
+  display: inline;
+  width: 100%;
+  position: absolute;
+  bottom: -1250px;
+  left: -1;
+  transform: rotateX(180deg);
+  mix-blend-mode: inherit;
+
+  @media (min-width:780px) {
+    bottom: -1520px;
+  }
+  @media (min-width:1200px) {
+    bottom: -1520px;
+  }
+  @media (min-width:1380px) {
+    bottom: -350px;
+  }
+}
+
+.space{
+  height: 40vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.788) 0%, rgba(139, 139, 139, 0.639) 50%, rgba(0, 0, 0, 0.78) 100%), url(../assets/bgLogo.jpg);
+  background-attachment: fixed;
+}
+
+.consejos-border-top{
+  display: inline;
+  width: 100%;
+  position: absolute;
+  bottom: -1520px;
+  left: -1;
+  mix-blend-mode: inherit;
+
+  @media (min-width:800px) {
+    bottom: -1830px;
+  }
+  @media (min-width:1380px) {
+    bottom: -660px;
+  }
+}
+
+.cuidados-2{
+  background-color: rgb(17, 17, 17);
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cuidados-2 .cuidados-text{
+  width: 90%;
+  margin-inline: auto;
+}
+
+.cuidados-tatuajes{
+  background-color: rgb(17, 17, 17);
+  color: rgb(224, 224, 224);
+}
+.cuidados-tatuajes-grid{
+  width: 90%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-rows: 2;
+  justify-content: center;
+  justify-items: center;
+  font-family: "Akshar", sans-serif;
+  font-size: 1.3rem;
+
+  @media (min-width:992px) {
+    grid-template-rows: 1;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 2rem;
+  }
+}
+.cuidados-tatuajes-grid-1{
+  margin-bottom: 20px;
+}
+.cuidados-tatuajes-grid-2{
+  display: flex;
+  flex-direction: column;
+}
+
+.cuidados-tatuajes-grid-2 a{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(234, 207, 170);
+  color: rgb(125, 125, 125);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+}
+.cuidados-tatuajes-grid-2 a:hover{
+  opacity: 0.7;
+  color: white;
+}
+
+.cuidados-tatuajes-pasos{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  padding: 15px 0;
+}
+.cuidados-tatuajes-pasos-paso{
+  display: flex;
+  margin-top: 70px;
+}
+.cuidados-tatuajes-pasos-paso-number{
+  font-size: 2rem;
+  padding: 25px 35px;
+  background-color: black;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: flex;
+  position: absolute;
+}
+.cuidados-tatuajes-pasos-paso-container{
+  width: 70%;
+  margin: 0 100px;
+  padding-left: 20px;
+  padding-top: 5px;
+  text-transform: uppercase;
+  text-align: left;
+
+  @media (min-width:768px) {
+    width: 40%;
+  }
+}
+
+.cuidados-tatuajes-pasos-paso-title{
+  font-weight: 700;
+}

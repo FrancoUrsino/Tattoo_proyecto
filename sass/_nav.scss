@@ -1,0 +1,45 @@
+nav{
+  display: flex;
+  justify-content:space-between;
+  justify-items: center;
+  width: 90%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: rgba(255, 255, 255, 0.083);
+  backdrop-filter: blur(6px);
+}
+
+.nav-logo{
+  color: rgb(228, 212, 190);
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Rye", serif;
+}
+.nav-logo:hover{
+  color: rgb(228, 212, 190);
+}
+
+.nav-list{
+  font-family: "Rye", serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: end;
+  list-style: none;
+}
+
+.nav-list-item{
+  padding: 5px 0;
+  margin: 0 auto;
+}
+
+.nav-link{
+  color: rgb(228, 212, 190);
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+.nav-link:hover{
+  color: rgb(236, 198, 144);
+}
+
+.navbar-toggler:focus{
+  color: transparent;
+}
