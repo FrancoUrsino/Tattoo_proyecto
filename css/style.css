@@ -836,7 +836,7 @@ nav {
   display: inline;
   width: 100%;
   position: absolute;
-  bottom: -1250px;
+  bottom: -1310px;
   left: -1;
   transform: rotateX(180deg);
   mix-blend-mode: inherit;
@@ -867,7 +867,7 @@ nav {
   display: inline;
   width: 100%;
   position: absolute;
-  bottom: -1520px;
+  bottom: -1560px;
   left: -1;
   mix-blend-mode: inherit;
 }
