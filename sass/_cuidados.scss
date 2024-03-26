@@ -161,7 +161,7 @@
   display: inline;
   width: 100%;
   position: absolute;
-  bottom: -1560px;
+  bottom: -1567px;
   left: -1;
   mix-blend-mode: inherit;
 
@@ -169,7 +169,7 @@
     bottom: -1830px;
   }
   @media (min-width:1380px) {
-    bottom: -660px;
+    bottom: -580px;
   }
 }
 
@@ -224,11 +224,13 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: all 200ms ease-in-out;
+
+  &:hover{
+    opacity: 0.7;
+    color: white; 
+  }
 }
-.cuidados-tatuajes-grid-2 a:hover{
-  opacity: 0.7;
-  color: white;
-}
+
 
 .cuidados-tatuajes-pasos{
   width: 90%;

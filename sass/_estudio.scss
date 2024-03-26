@@ -1,0 +1,144 @@
+.estudio {
+  width: 100%;
+  background-color: rgb(17, 17, 17);
+
+  &--container {
+    width: 90%;
+    margin-inline: auto;
+    padding: 30px 0;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+    gap: 20px;
+    overflow-x: hidden;
+
+    @media (min-width:1200px) {
+      grid-template-columns: 800px 1fr;
+    }
+
+    &__1 img {
+      width: 450px;
+
+      @media (min-width:1200px) {
+        width: 750px;
+      }
+    }
+
+    &__2 {
+      text-align: center;
+
+      &__title {
+        font-size: 2rem;
+        font-family: "Rye", serif;
+        text-transform: uppercase;
+        color: rgb(236, 198, 144);
+      }
+
+      &__subtitle {
+        font-family: "Akshar", sans-serif;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+      }
+
+      &__text {
+        font-family: "Akshar", sans-serif;
+        font-size: 1.2rem;
+
+        @media (min-width:1200px) {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  & .consejos-border-bottom {
+    display: inline;
+    width: 100%;
+    position: relative;
+    bottom: -110px;
+    left: -1;
+    transform: rotateX(180deg);
+    mix-blend-mode: darken;
+
+    @media (min-width:780px) {
+      bottom: -118px;
+    }
+  }
+}
+
+.tatuadores {
+  background-image: url(../assets/bg-pattern-1.jpg);
+
+  &__container {
+    display: grid;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    grid-template:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+    ;
+    @media (min-width:768px) {
+      grid-template:
+        "card1 card1"
+        "card2 card3"
+        "card4 card5"
+      ;
+    }
+    @media (min-width:1280px){
+      grid-template: 
+      "card1 card2 card3 card4 card5" 350px/
+      19% 19% 19% 19% 19%
+      ;
+    }
+
+    & .card1 {
+      grid-area: card1;
+    }
+
+    & .card2 {
+      grid-area: card2;
+    }
+
+    & .card3 {
+      grid-area: card3;
+    }
+
+    & .card4 {
+      grid-area: card4;
+    }
+
+    & .card5 {
+      grid-area: card5;
+    }
+
+    &--card {
+      width: 100%;
+      object-fit: cover;
+      margin-inline: auto;
+
+      &--img {
+        width: 100%;
+        height: 300px;
+      }
+
+      &--name {
+        position: relative;
+        top: -280px;
+        left: -130px;
+        color: rgb(255, 255, 255);
+        font-family: "Rye", serif;
+        font-size: 2rem;
+
+        @media (min-width:1280px){
+          left: -70px;
+        }
+      }
+    }
+  }
+}
