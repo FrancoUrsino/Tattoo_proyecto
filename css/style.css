@@ -769,13 +769,14 @@ nav {
 
 .consejos-card-img {
   margin: auto;
-  width: 100%;
+  width: 450px;
   height: 650px;
   background-color: rgba(83, 83, 83, 0.233);
   visibility: hidden;
   transition: all 200ms ease-in-out;
   position: relative;
   display: flex;
+  left: -10px;
 }
 @media (min-width: 788px) {
   .consejos-card-img {
@@ -863,7 +864,7 @@ nav {
   display: inline;
   width: 100%;
   position: absolute;
-  bottom: -1310px;
+  bottom: -1320px;
   left: -1;
   mix-blend-mode: inherit;
 }
