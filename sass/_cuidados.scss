@@ -196,16 +196,16 @@
 .cuidados-tatuajes-grid{
   width: 90%;
   margin-inline: auto;
-  display: grid;
-  grid-template-rows: 2;
+  // display: grid;
+  // grid-template-rows: 2;
   justify-content: center;
   justify-items: center;
   font-family: "Akshar", sans-serif;
   font-size: 1.3rem;
 
   @media (min-width:992px) {
-    grid-template-rows: 1;
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: 1;
+    // grid-template-columns: repeat(2, 1fr);
     font-size: 2rem;
   }
 }
@@ -235,13 +235,10 @@
 
 .cuidados-tatuajes-pasos{
   width: 90%;
-  display: flex;
-  flex-direction: column;
   margin: 30px auto;
   padding: 15px 0;
 }
 .cuidados-tatuajes-pasos-paso{
-  display: flex;
   margin-top: 70px;
 }
 .cuidados-tatuajes-pasos-paso-number{
