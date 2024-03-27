@@ -11,6 +11,7 @@
     grid-template-columns: repeat(auto-fit, minmax(450px, auto));
     gap: 20px;
     overflow-x: hidden;
+    justify-items: center;
 
     @media (min-width:1200px) {
       grid-template-columns: 800px 1fr;
@@ -51,7 +52,7 @@
     }
   }
 
-  & .consejos-border-bottom {
+  & .estudio__border--bottom {
     display: inline;
     width: 100%;
     position: relative;
