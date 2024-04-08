@@ -30,17 +30,25 @@
 
 .consejos{
   background-color: rgb(17, 17, 17);
+  width: 100%;
 
   @media (min-width:1360px) {
     height: 70vh;
   }
 }
+
+.consejos-container{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .consejos-grid{
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(600px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(580px, auto));
   z-index: 10;
+  width: 100%;
 
   @media (min-width: 1280px){
     justify-content: space-between;

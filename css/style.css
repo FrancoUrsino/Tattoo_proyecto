@@ -53,6 +53,7 @@ nav {
   font-size: 30px;
   text-decoration: none;
   font-family: "Rye", serif;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 
 .nav-logo:hover {
@@ -81,8 +82,16 @@ nav {
   color: rgb(236, 198, 144);
 }
 
+.navbar-toggler {
+  border: transparent;
+}
+
 .navbar-toggler:focus {
   color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke=' rgb(228, 212, 190)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 
 .hero {
@@ -745,6 +754,7 @@ nav {
 
 .consejos {
   background-color: rgb(17, 17, 17);
+  width: 100%;
 }
 @media (min-width: 1360px) {
   .consejos {
@@ -752,12 +762,18 @@ nav {
   }
 }
 
+.consejos-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .consejos-grid {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(600px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(580px, auto));
   z-index: 10;
+  width: 100%;
 }
 @media (min-width: 1280px) {
   .consejos-grid {
