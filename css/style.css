@@ -877,12 +877,12 @@ nav {
 }
 @media (min-width: 780px) {
   .consejos-border-bottom {
-    bottom: -1340px;
+    bottom: -1400px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .consejos-border-bottom {
-    bottom: -520px;
+    bottom: -550px;
   }
 }
 @media (min-width: 1380px) {
@@ -910,7 +910,7 @@ nav {
     bottom: -1600px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .consejos-border-top {
     bottom: -780px;
   }
@@ -1349,6 +1349,8 @@ nav {
   text-transform: uppercase;
   color: rgb(236, 198, 144);
   text-shadow: 3px 3px 3px rgb(96, 96, 96);
+  display: flex;
+  align-items: center;
 }
 
 .footer-list {
