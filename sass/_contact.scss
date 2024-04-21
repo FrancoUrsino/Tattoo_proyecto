@@ -43,7 +43,7 @@
   }
 
   &__box{
-    border-color: rgb(236, 198, 144);
+    border-color: $firstColor;
     border: 1px solid var(#b4b4b48a);
     padding: 40px 50px;
     border-radius: 20px;
@@ -52,10 +52,10 @@
 
   &__title{
     font-size: 28px;
-    font-family: "Rye", serif;
+    font-family: $firstFont;
     text-align: center;
     line-height: 1.2;
-    color: rgb(236, 198, 144);
+    color: $firstColor;
   }
 
   &__container--form{
@@ -75,7 +75,7 @@
     border-bottom: 2px solid rgb(125, 125, 125);
     color: inherit;
     font-weight: inherit;
-    font-family: "Akshar", sans-serif;
+    font-family: $secondaryFont;
     font-size: 16px;
     outline: none;
 
@@ -113,7 +113,7 @@
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
-    background: linear-gradient(to right, rgb(236, 198, 144), rgba(255, 255, 255, 0.465))0 0 / 400% 100%;
+    background: linear-gradient(to right, $firstColor, rgba(255, 255, 255, 0.465))0 0 / 400% 100%;
     animation: move-bg 3s infinite alternate-reverse;
     background-clip: var(-webkit-background-clip);
     -webkit-background-clip: text;
@@ -129,7 +129,7 @@
   
   
     &:hover{
-      background: rgb(236, 198, 144);
+      background: $firstColor;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.18), 0 0 40px rgba(255, 255, 255, 0.18), 0 0 80px rgba(255, 255, 255, 0.18);
       transition-delay: 1.25s;
       color: rgb(125, 125, 125);

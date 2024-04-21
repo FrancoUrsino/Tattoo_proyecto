@@ -120,8 +120,8 @@
 }
 
 .info-container--title {
-  font-family: "Rye", serif;
-  color: rgb(236, 198, 144);
+  font-family: $firstFont;
+  color: $firstColor;
   ;
   text-transform: uppercase;
   opacity: 1;
@@ -139,7 +139,7 @@
   width: 90%;
   margin: 0 auto;
   font-size: 1.4rem;
-  font-family: "Akshar", sans-serif;
+  font-family: $secondaryFont;
   text-transform: uppercase;
   z-index: 0;
 
@@ -149,7 +149,7 @@
 }
 
 .info-container--link {
-  color: rgb(224, 181, 115);
+  color: $firstColor;
 }
 
 .info-container--firma {
@@ -180,8 +180,8 @@
 }
 
 .title--section-title {
-  font-family: "Rye", serif;
-  color: rgb(224, 224, 224);
+  font-family: $firstFont;
+  color: $secondColor;
   ;
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
   padding: 80px 0;
@@ -229,8 +229,8 @@
 }
 
 .about-title {
-  font-family: "Rye", serif;
-  color: rgb(59, 59, 59);
+  font-family: $firstFont;
+  color: $thirdColor;
   font-size: 2rem;
   transform: scaley(2);
   text-shadow: 2px 2px 3px rgb(125, 125, 125);
@@ -253,7 +253,7 @@
   width: 90%;
   margin: 20px auto;
   font-size: 1.4rem;
-  font-family: "Akshar", sans-serif;
+  font-family: $secondaryFont;
   text-transform: uppercase;
 
   @media (min-width:1280px) {
@@ -291,7 +291,7 @@
 
 .local-card-title {
   color: rgb(255, 255, 255);
-  font-family: "Rye", serif;
+  font-family: $firstFont;
   font-size: 30px;
   transform: scaleY(1.5);
   position: relative;
@@ -323,7 +323,7 @@
 .local-card-text {
   transition: all;
   font-size: 1.5rem;
-  font-family: "Akshar", sans-serif;
+  font-family: $secondaryFont;
   color: white;
 }
 
@@ -444,7 +444,7 @@
 
 .visits-title {
   color: rgb(168, 168, 168);
-  font-family: "Rye", serif;
+  font-family: $firstFont;
   font-size: 2.4rem;
   transform: scaleY(1.7);
 
@@ -457,8 +457,8 @@
   margin-top: 30px;
   padding: 10px 10px;
   text-decoration: none;
-  background-color: rgb(234, 207, 170);
-  color: rgb(59, 59, 59);
+  background-color: $firstColor;
+  color: $thirdColor;
 
   @media (min-width:1280px) {
     font-size: 2rem;
@@ -488,7 +488,7 @@
 }
 
 .test-card-body h4 {
-  color: rgb(228, 212, 190);
+  color: $firstColor;
 }
 
 .test-card-body p {
@@ -518,5 +518,5 @@
 }
 
 .owl-dot.active span {
-  background-color: rgb(228, 212, 190) !important;
+  background-color: $firstColor !important;
 }

@@ -10,18 +10,18 @@ nav{
 }
 
 .nav-logo{
-  color: rgb(228, 212, 190);
+  color: $firstColor;
   font-size: 30px;
   text-decoration: none;
-  font-family: "Rye", serif;
+  font-family: $firstFont;
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 .nav-logo:hover{
-  color: rgb(228, 212, 190);
+  color: $firstColor;
 }
 
 .nav-list{
-  font-family: "Rye", serif;
+  font-family: $firstFont;
   text-transform: uppercase;
   display: flex;
   justify-content: end;
@@ -34,11 +34,11 @@ nav{
 }
 
 .nav-link{
-  color: rgb(228, 212, 190);
+  color: $firstColor;
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 .nav-link:hover{
-  color: rgb(236, 198, 144);
+  color: $firstColor;
 }
 
 .navbar-toggler{
@@ -49,5 +49,5 @@ nav{
 }
 
 .navbar-toggler-icon{
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke=' rgb(228, 212, 190)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke=' $firstColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
