@@ -15,9 +15,14 @@ nav{
   text-decoration: none;
   font-family: $firstFont;
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
-}
-.nav-logo:hover{
-  color: $firstColor;
+
+  &:hover{
+    color: $firstColor;
+  }
+  &:focus{
+    color: $firstColor;
+  }
+
 }
 
 .nav-list{
@@ -49,5 +54,5 @@ nav{
 }
 
 .navbar-toggler-icon{
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke=' $firstColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgb(236, 198, 144)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
