@@ -93,7 +93,7 @@
 .info {
   background: url(../assets/bg-pattern-1.jpg);
   position: relative;
-  top: 850px;
+  top: 750px;
   width: 100%;
   z-index: 0;
   height: 100vh;
@@ -155,17 +155,18 @@
 .info-container--firma {
   font-family: "Allura", cursive;
   font-size: 60px;
-  margin-top: 50px;
+  margin-top: 0px;
   letter-spacing: -5.5px;
   position: relative;
-  top: 100px;
+  top: 30px;
+  
 }
 
 /* =============================================== */
 
 .title--section {
   position: relative;
-  top: 820px;
+  top: 720px;
   background: linear-gradient(180deg, rgba(224, 180, 115, 0.286) 0%, rgba(224, 180, 115, 0.435) 100%), url(../assets/tattooTitle.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -182,9 +183,8 @@
 .title--section-title {
   font-family: $firstFont;
   color: $secondColor;
-  ;
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
-  padding: 80px 0;
+  padding: 50px 0 80px 0;
   margin: 100px 0;
   font-size: 3rem;
 
@@ -198,7 +198,7 @@
 .about {
   background: url(../assets/bg-pattern-1.jpg);
   position: relative;
-  top: 800px;
+  top: 700px;
   width: 100%;
   z-index: -10;
   height: 98vh;
@@ -216,7 +216,7 @@
     height: 100vh;
     overflow: hidden;
     background-repeat: no-repeat;
-    top: 300px;
+    top: 240px;
     transform: rotateY(180deg);
     opacity: 0.3;
     position: absolute;
@@ -231,7 +231,7 @@
 .about-title {
   font-family: $firstFont;
   color: $thirdColor;
-  font-size: 2rem;
+  font-size: 1.5rem;
   transform: scaley(2);
   text-shadow: 2px 2px 3px rgb(125, 125, 125);
   text-transform: uppercase;
@@ -247,12 +247,17 @@
 .about-img {
   display: flex;
   margin: 10px auto;
+  width: 200px;
+
+  @media (min-width:1280px) {
+    width: 300px;
+  }
 }
 
 .about-text {
   width: 90%;
   margin: 20px auto;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: $secondaryFont;
   text-transform: uppercase;
 
@@ -268,7 +273,7 @@
 .local {
   background-color: rgb(17, 17, 17);
   position: relative;
-  top: 800px;
+  top: 700px;
   width: 100%;
   height: auto;
   z-index: 0;
@@ -420,7 +425,7 @@
   background-size: cover;
   position: relative;
   backdrop-filter: Grayscale(90%);
-  top: 800px;
+  top: 700px;
   width: 100%;
   height: 70vh;
   z-index: 0;
@@ -447,9 +452,11 @@
   font-family: $firstFont;
   font-size: 2.4rem;
   transform: scaleY(1.7);
+  text-align: center;
 
   @media (min-width:1280px) {
     font-size: 4rem;
+    text-align: right;
   }
 }
 

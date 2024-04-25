@@ -187,7 +187,7 @@ nav {
 .info {
   background: url(../assets/bg-pattern-1.jpg);
   position: relative;
-  top: 850px;
+  top: 750px;
   width: 100%;
   z-index: 0;
   height: 100vh;
@@ -251,16 +251,16 @@ nav {
 .info-container--firma {
   font-family: "Allura", cursive;
   font-size: 60px;
-  margin-top: 50px;
+  margin-top: 0px;
   letter-spacing: -5.5px;
   position: relative;
-  top: 100px;
+  top: 30px;
 }
 
 /* =============================================== */
 .title--section {
   position: relative;
-  top: 820px;
+  top: 720px;
   background: linear-gradient(180deg, rgba(224, 180, 115, 0.286) 0%, rgba(224, 180, 115, 0.435) 100%), url(../assets/tattooTitle.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -278,7 +278,7 @@ nav {
   font-family: "Rye", serif;
   color: rgb(224, 224, 224);
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
-  padding: 80px 0;
+  padding: 50px 0 80px 0;
   margin: 100px 0;
   font-size: 3rem;
 }
@@ -292,7 +292,7 @@ nav {
 .about {
   background: url(../assets/bg-pattern-1.jpg);
   position: relative;
-  top: 800px;
+  top: 700px;
   width: 100%;
   z-index: -10;
   height: 98vh;
@@ -310,7 +310,7 @@ nav {
   height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
-  top: 300px;
+  top: 240px;
   transform: rotateY(180deg);
   opacity: 0.3;
   position: absolute;
@@ -325,7 +325,7 @@ nav {
 .about-title {
   font-family: "Rye", serif;
   color: rgb(59, 59, 59);
-  font-size: 2rem;
+  font-size: 1.5rem;
   transform: scaley(2);
   text-shadow: 2px 2px 3px rgb(125, 125, 125);
   text-transform: uppercase;
@@ -341,12 +341,18 @@ nav {
 .about-img {
   display: flex;
   margin: 10px auto;
+  width: 200px;
+}
+@media (min-width: 1280px) {
+  .about-img {
+    width: 300px;
+  }
 }
 
 .about-text {
   width: 90%;
   margin: 20px auto;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: "Akshar", sans-serif;
   text-transform: uppercase;
 }
@@ -361,7 +367,7 @@ nav {
 .local {
   background-color: rgb(17, 17, 17);
   position: relative;
-  top: 800px;
+  top: 700px;
   width: 100%;
   height: auto;
   z-index: 0;
@@ -482,7 +488,7 @@ nav {
   background-size: cover;
   position: relative;
   backdrop-filter: Grayscale(90%);
-  top: 800px;
+  top: 700px;
   width: 100%;
   height: 70vh;
   z-index: 0;
@@ -510,10 +516,12 @@ nav {
   font-family: "Rye", serif;
   font-size: 2.4rem;
   transform: scaleY(1.7);
+  text-align: center;
 }
 @media (min-width: 1280px) {
   .visits-title {
     font-size: 4rem;
+    text-align: right;
   }
 }
 
@@ -1322,7 +1330,7 @@ nav {
   width: 100%;
   background-color: rgb(17, 17, 17);
   position: relative;
-  top: 780px;
+  top: 700px;
   color: rgb(96, 96, 96);
   display: grid;
   justify-content: center;
@@ -1330,7 +1338,7 @@ nav {
 }
 @media (min-width: 780px) {
   .footer {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
     align-items: center;
     padding: 30px 0;
   }
